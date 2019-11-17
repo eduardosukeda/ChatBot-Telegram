@@ -9,41 +9,54 @@ public class JavaBotTelegram extends TelegramLongPollingBot {
 
 	public void onUpdateReceived(Update update) {
 
-//            System.out.println(update.getMessage().getText());
-//            System.out.println(update.getMessage().getFrom().getFirstName() );
-
 		String command = update.getMessage().getText();
 
 		SendMessage message = new SendMessage();
-
-		if (command.equals("/myname")) {
-
-			System.out.println(update.getMessage().getFrom().getFirstName());
-
-			message.setText(update.getMessage().getFrom().getFirstName());
-		}
-
-		if (command.equals("/mylastname")) {
-
-			System.out.println(update.getMessage().getFrom().getLastName());
-			message.setText(update.getMessage().getFrom().getLastName());
-		}
-
-		if (command.equals("/myfullname")) {
-			System.out.println(
-					update.getMessage().getFrom().getFirstName() + " " + update.getMessage().getFrom().getLastName());
-			message.setText(
-					update.getMessage().getFrom().getFirstName() + " " + update.getMessage().getFrom().getLastName());
-		}
-
 		message.setChatId(update.getMessage().getChatId());
 
-		try {
-			execute(message);
-		} catch (TelegramApiException e) {
-			e.printStackTrace();
+		if (command.equals("/ajuda")) {
+
+			message.setText("Bem vindo a loja virtual, digite /comprar para começar !");
+			try {
+				execute(message);
+			} catch (TelegramApiException e) {
+				e.printStackTrace();
+			}
 		}
 
+		if (command.equals("/comprar")) {
+
+			message.setText("Qual tipo de produto gostaria de comprar ? ?");
+
+			String[] arrayProdutos = { "1 - Notebook", "2 - Desktop" };
+
+			for (int i = 0; i < arrayProdutos.length; i++) {
+				message.setText(arrayProdutos[i]);
+				try {
+					execute(message);
+				} catch (TelegramApiException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+
+		if (command.equals("1")) {
+
+			message.setText("Qual marca de notebook gostaria de comprar ?");
+			Notebook marca1 = new Notebook("Dell");
+			Notebook marca2 = new Notebook("Samsung");
+
+			String[] arrayNotebook = { marca1.getDescricao(), marca2.getDescricao() };
+
+			for (int i = 0; i < arrayNotebook.length; i++) {
+				message.setText(arrayNotebook[i]);
+				try {
+					execute(message);
+				} catch (TelegramApiException e) {
+					e.printStackTrace();
+				}
+			}
+		}
 	}
 
 	public String getBotUsername() {
