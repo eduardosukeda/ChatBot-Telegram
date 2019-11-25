@@ -1,0 +1,5 @@
+Bem vindo ao Tietê Plaza Shopping !
+
+Digite um dos comandos abaixo de acordo com a preferência:
+
+/localizacao

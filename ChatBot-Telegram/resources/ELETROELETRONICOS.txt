@@ -1,0 +1,17 @@
+Americanas Express;1º Piso;SEM TELEFONE
+Asus;Piso Térreo;(11) 3833-0794 
+Casas Bahia;1º Piso;(11) 3648-6300
+Claro;Piso Térreo;SEM TELEFONE
+Eleven Cases;1° Piso;(15) 99632-1717
+Fast Shop;Piso Térreo;(11) 3238-1625
+iPlace;1º Piso;(11) 3201-9162
+Laboratório do Celular;2º Piso;(11) 3201-9347
+Loft;Piso Térreo;(11) 3201-9485
+Motorola;Piso Térreo;(11) 3201-9072
+Nextel;1º Piso;SEM TELEFONE
+Nic Art in Case;Piso Térreo;11) 2534-6145
+Oi;Piso Térreo;SEM TELEFONE
+Polishop;Piso Térreo;(11) 3201-9084
+Samsung;Piso Térreo;(11) 93235-3531
+Tim;Piso Térreo;SEM TELEFONE
+Vivo;Piso Térreo;(11) 3201-9320
