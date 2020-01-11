@@ -1,16 +1,15 @@
-package br.com.fiap.util;
+package br.com.fiap.service;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class LeituraTexto {
+public class LeituraTextoService {
 
-	private static String texto = "";
+	private static String texto;
 
-	public LeituraTexto(String path) throws IOException {
-
+	public LeituraTextoService(String path) throws IOException {
 		texto = "";
 
 		BufferedReader br = new BufferedReader(
