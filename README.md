@@ -18,10 +18,3 @@ Tem como objetivo facilitar a comunicação das informações do Tietê Plaza Sh
 4 - Selecionando algum comando especifico de uma categoria de loja, é aberto a descrição, número do piso e telefone para contato
 
 ![Image description](https://github.com/eduardosukeda/ChatBot-Telegram/blob/master/ChatBot-Telegram/resources/images/comandoselected.jpeg)
-
-## Integrantes do Grupo - FIAP - 35SCJ
-1 - Eduardo Sukeda de Arruda, 335537
-
-2 - Andre Brito - 335444
-
-3 - Fernando Fiorato - 335492
